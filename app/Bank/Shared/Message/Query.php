@@ -1,0 +1,8 @@
+<?php
+
+namespace App\Bank\Shared\Message;
+
+interface Query
+{
+    
+}
