@@ -97,7 +97,14 @@ El flujo es el siguiente:
     php artisan key:generate
     ```
 
-4. Iniciar servidor:
+4. Configurar la base de datos en `.env`.
+
+5. Ejecutar las migraciones:
+    ```bash
+    php artisan migrate
+    ```
+
+6. Iniciar servidor:
     ```bash
     php artisan serve
     ```
