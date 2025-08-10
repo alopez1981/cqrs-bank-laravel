@@ -2,7 +2,9 @@
 
 namespace App\Bank\Application\Command;
 
-use App\Bank\Domain\{Account, AccountRepository};
+use App\Bank\Domain\Account;
+use App\Bank\Domain\AccountRepository;
+
 
 final class OpenAccountCommandHandler
 {
@@ -12,7 +14,7 @@ final class OpenAccountCommandHandler
 
     public function __invoke(OpenAccountCommand $cmd): void
     {
-        if ($this->repo->get($cmd->accountId)) return;
-        $this->repo->save(new Account($cmd->accountId));
+        $account = new Account($cmd->accountId);
+        $this->repo->save($account);
     }
 }
