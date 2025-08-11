@@ -117,6 +117,7 @@ El flujo es el siguiente:
 - Entender el uso de **CommandBus** y **QueryBus**.
 - Separar responsabilidades de lectura y escritura.
 - Usar un **repositorio en memoria** para simplificar el ejemplo.
+- Añadida implementación en Eloquent.
 
 ---
 
